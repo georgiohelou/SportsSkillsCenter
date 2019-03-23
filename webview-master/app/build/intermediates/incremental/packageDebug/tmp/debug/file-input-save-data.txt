@@ -1,0 +1,11 @@
+#Internal package file, do not edit.
+#Sat Mar 23 15:28:49 EET 2019
+1.base=/Users/georgiohelou/Downloads/webview-master/app/build/intermediates/dex/debug/mergeProjectDexDebug/out
+0.baseType=DIRECTORY
+1.baseType=DIRECTORY
+count=2
+1.set=DEX
+0.path=index.html
+0.set=ASSET
+0.base=/Users/georgiohelou/Downloads/webview-master/app/build/intermediates/merged_assets/debug/mergeDebugAssets/out
+1.path=classes.dex
