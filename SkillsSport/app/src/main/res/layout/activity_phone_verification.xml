@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PhoneVerificationActivity">
+
+    <!---->
+    <ImageView
+        android:src="@drawable/skills_sport_center"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <ImageView
+            android:src="@drawable/baseline_phone_24"
+            android:layout_marginTop="15px"
+            android:layout_width="0dp"
+            android:layout_height="120px"
+            android:layout_weight="0.35"/>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5">
+            <AutoCompleteTextView
+                android:id="@+id/number"
+                android:textColor="#A9A9A9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <ProgressBar
+            android:id="@+id/phone_bar"
+            android:visibility="invisible"
+            android:layout_marginTop="20px"
+            android:layout_width="100px"
+            android:layout_height="100px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:weightSum="2">
+
+
+        <!---->
+        <ImageView
+            android:src="@drawable/baseline_lock_24"
+            android:layout_marginTop="15px"
+            android:layout_width="0px"
+            android:layout_height="120px"
+            android:layout_weight="0.35"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5">
+            <AutoCompleteTextView
+                android:id="@+id/verification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Verification Code"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <ProgressBar
+            android:id="@+id/activation_bar"
+            android:visibility="invisible"
+            android:layout_marginTop="20px"
+            android:layout_width="100px"
+            android:layout_height="100px" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/send_verification"
+            android:text="Send Verification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

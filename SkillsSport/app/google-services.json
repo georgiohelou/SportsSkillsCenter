@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "272595204914",
+    "firebase_url": "https://skillssport-680b3.firebaseio.com",
+    "project_id": "skillssport-680b3",
+    "storage_bucket": "skillssport-680b3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272595204914:android:793b753d2566b5d8",
+        "android_client_info": {
+          "package_name": "com.example.skillssport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "272595204914-obg1tckfmbnoc94ovbk0ncsotqmff01e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.skillssport",
+            "certificate_hash": "bb1b7269703c930d14f44bb26912348808ff89ea"
+          }
+        },
+        {
+          "client_id": "272595204914-ia0eklkbcd3n9gh7pa1egcp7cdqvmfun.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiPZbdjMS86n4U0uT6KW-7jru5G1Bwc2s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "272595204914-ia0eklkbcd3n9gh7pa1egcp7cdqvmfun.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

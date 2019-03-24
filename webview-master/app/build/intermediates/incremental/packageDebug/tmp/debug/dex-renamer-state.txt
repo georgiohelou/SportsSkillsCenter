@@ -1,4 +1,0 @@
-#Sat Mar 23 15:28:49 EET 2019
-base.0=/Users/georgiohelou/Downloads/webview-master/app/build/intermediates/dex/debug/mergeProjectDexDebug/out
-path.0=classes.dex
-renamed.0=classes.dex
