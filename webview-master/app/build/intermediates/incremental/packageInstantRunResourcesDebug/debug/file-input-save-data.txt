@@ -1,0 +1,30 @@
+#Internal package file, do not edit.
+#Fri Mar 29 19:46:55 EET 2019
+2.base=/Users/georgiohelou/Downloads/webview-master new/app/build/intermediates/res/debug/resources-debug.ap_
+5.file=/Users/georgiohelou/Downloads/webview-master new/app/build/intermediates/res/debug/resources-debug.ap_/res/layout/activity_main.xml
+5.set=ANDROID_RESOURCE
+3.base=/Users/georgiohelou/Downloads/webview-master new/app/build/intermediates/res/debug/resources-debug.ap_
+6.file=/Users/georgiohelou/Downloads/webview-master new/app/build/intermediates/res/debug/resources-debug.ap_/AndroidManifest.xml
+2.set=ANDROID_RESOURCE
+4.base=/Users/georgiohelou/Downloads/webview-master new/app/build/intermediates/res/debug/resources-debug.ap_
+7.file=/Users/georgiohelou/Downloads/webview-master new/app/build/intermediates/assets/debug/index.html
+7.set=ASSET
+count=9
+0.file=/Users/georgiohelou/Downloads/webview-master new/app/build/intermediates/res/debug/resources-debug.ap_/res/mipmap-mdpi-v4/ic_launcher.png
+5.base=/Users/georgiohelou/Downloads/webview-master new/app/build/intermediates/res/debug/resources-debug.ap_
+8.file=/Users/georgiohelou/Downloads/webview-master new/app/build/intermediates/res/debug/resources-debug.ap_/resources.arsc
+4.set=ANDROID_RESOURCE
+6.base=/Users/georgiohelou/Downloads/webview-master new/app/build/intermediates/res/debug/resources-debug.ap_
+1.file=/Users/georgiohelou/Downloads/webview-master new/app/build/intermediates/res/debug/resources-debug.ap_/res/mipmap-xxhdpi-v4/ic_launcher.png
+1.set=ANDROID_RESOURCE
+7.base=/Users/georgiohelou/Downloads/webview-master new/app/build/intermediates/assets/debug
+2.file=/Users/georgiohelou/Downloads/webview-master new/app/build/intermediates/res/debug/resources-debug.ap_/res/mipmap-xhdpi-v4/ic_launcher.png
+6.set=ANDROID_RESOURCE
+0.base=/Users/georgiohelou/Downloads/webview-master new/app/build/intermediates/res/debug/resources-debug.ap_
+8.base=/Users/georgiohelou/Downloads/webview-master new/app/build/intermediates/res/debug/resources-debug.ap_
+3.file=/Users/georgiohelou/Downloads/webview-master new/app/build/intermediates/res/debug/resources-debug.ap_/res/mipmap-hdpi-v4/ic_launcher.png
+3.set=ANDROID_RESOURCE
+1.base=/Users/georgiohelou/Downloads/webview-master new/app/build/intermediates/res/debug/resources-debug.ap_
+4.file=/Users/georgiohelou/Downloads/webview-master new/app/build/intermediates/res/debug/resources-debug.ap_/res/mipmap-xxxhdpi-v4/ic_launcher.png
+8.set=ANDROID_RESOURCE
+0.set=ANDROID_RESOURCE
