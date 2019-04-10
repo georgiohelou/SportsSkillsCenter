@@ -157,7 +157,7 @@ public class PhoneVerificationActivity extends AppCompatActivity {
                             userMap.put("thumb_image","default");
                             mDatabase.setValue(userMap);
 
-                            Intent intent = new Intent(PhoneVerificationActivity.this,MainActivity.class);
+                            Intent intent = new Intent(PhoneVerificationActivity.this,ProfileActivity.class);
                             startActivity(intent);
                             finish();
                             // ...
