@@ -31,6 +31,7 @@ public class MainActivity extends Activity {
     FirebaseUser currentUser;
     private FirebaseAuth mAuth;
     private Button myProfileButton;
+    private Button mChatButton;
 
     @SuppressLint("SetJavaScriptEnabled")
     @Override
@@ -45,6 +46,8 @@ public class MainActivity extends Activity {
 
         mWebView = findViewById(R.id.activity_main_webview);
         myProfileButton = findViewById(R.id.my_profile);
+        mChatButton = findViewById(R.id.chat);
+
         setButtonSettings();
         // Force links and redirects to open in the WebView instead of in a browser
         mWebView.setWebViewClient(new WebViewClient());
@@ -55,7 +58,7 @@ public class MainActivity extends Activity {
 
         // REMOTE RESOURCE
          mWebView.loadUrl("https://sites.google.com/view/skillssportscenter/home");
-         mWebView.setWebViewClient(new MyWebViewClient());
+         //mWebView.setWebViewClient(new MyWebViewClient());
 
         // LOCAL RESOURCE
         // mWebView.loadUrl("file:///android_asset/index.html");
@@ -72,6 +75,14 @@ public class MainActivity extends Activity {
     }
 
     public void setButtonSettings(){
+
+        mChatButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(thisContext, ChatActivity.class);
+                startActivity(intent);
+            }
+        });
 
         myProfileButton.setOnClickListener(new View.OnClickListener() {
             @Override

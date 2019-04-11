@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/contact_display_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Display Name"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/contact_last_seen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="5dp"
+            android:text="Last Seen"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/contact_display_image"
+        android:src="@drawable/default_avatar"
+        android:layout_alignParentRight="true"
+
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+
+</RelativeLayout>

@@ -26,6 +26,7 @@ public class ProfileActivity extends AppCompatActivity {
     private AutoCompleteTextView mFirstName;
     private AutoCompleteTextView mLastName;
     private AutoCompleteTextView mEmail;
+    //private AutoCompleteTextView mHobby;
     private Button mEditandSubmit;
     String buttonState;
 
@@ -42,6 +43,7 @@ public class ProfileActivity extends AppCompatActivity {
         mLastName=findViewById(R.id.last_name);
         mEmail=findViewById(R.id.email);
         mEditandSubmit=findViewById(R.id.edit_and_submit);
+        //mHobby=findViewById(R.id.hobby);
 
         buttonState="Submit";
 
@@ -64,6 +66,7 @@ public class ProfileActivity extends AppCompatActivity {
         mFirstName.setEnabled(b);
         mLastName.setEnabled(b);
         mEmail.setEnabled(b);
+        //mHobby.setEnabled(b);
         mEditandSubmit.setText(b ? "Submit" : "Edit");
     }
 
@@ -116,6 +119,7 @@ public class ProfileActivity extends AppCompatActivity {
         userMap.put("first_name", mFirstName.getText().toString());
         userMap.put("last_name", mLastName.getText().toString());
         userMap.put("email",mEmail.getText().toString());
+        //userMap.put("Hobby",mHobby.getText().toString());
 
         mDatabase.updateChildren(userMap);
     }

@@ -12,8 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".ChatActivity"
+            android:label="Skills Sport Center Chat"></activity>
+        <activity
             android:name=".ProfileActivity"
-            android:label="My Profile"></activity>
+            android:label="My Profile" />
         <activity
             android:name=".PhoneVerificationActivity"
             android:windowSoftInputMode="adjustResize" />
