@@ -29,13 +29,15 @@ public class ProfileActivity extends AppCompatActivity {
     //private AutoCompleteTextView mHobby;
     private Button mEditandSubmit;
     String buttonState;
-
+    String my_uid;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+
+        my_uid=getIntent().getStringExtra("my_uid");
 
         mPhoneNumber = findViewById(R.id.number);
         mPhoneNumber.setEnabled(false);
@@ -85,10 +87,8 @@ public class ProfileActivity extends AppCompatActivity {
     }
 
     public void populateData(){
-        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-        String uid = user.getUid();
 
-        DatabaseReference mDatabase= FirebaseDatabase.getInstance().getReference().child("Users").child(uid);
+        DatabaseReference mDatabase= FirebaseDatabase.getInstance().getReference().child("Users").child(my_uid);
         final String firstName="";
         String lastName="";
         String Email="";
@@ -111,10 +111,8 @@ public class ProfileActivity extends AppCompatActivity {
     }
 
     public void updateData(){
-        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-        String uid = user.getUid();
 
-        DatabaseReference mDatabase= FirebaseDatabase.getInstance().getReference().child("Users").child(uid);
+        DatabaseReference mDatabase= FirebaseDatabase.getInstance().getReference().child("Users").child(my_uid);
         HashMap<String,Object> userMap = new HashMap<>();
         userMap.put("first_name", mFirstName.getText().toString());
         userMap.put("last_name", mLastName.getText().toString());

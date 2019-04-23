@@ -12,6 +12,7 @@ import android.graphics.drawable.AnimationDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.webkit.WebSettings;
@@ -79,7 +80,7 @@ public class MainActivity extends Activity {
         mChatButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(thisContext, ChatActivity.class);
+                Intent intent = new Intent(thisContext, ContactUsActivity.class);
                 startActivity(intent);
             }
         });
@@ -95,6 +96,7 @@ public class MainActivity extends Activity {
 
                 Intent intent = new Intent(thisContext,ProfileActivity.class);
                 intent.putExtra("isSignedIn",true);
+                intent.putExtra("my_uid",currentUser.getUid());
                 startActivity(intent);
             }
         });
@@ -104,9 +106,8 @@ public class MainActivity extends Activity {
     @Override
     public void onStart() {
         super.onStart();
-        // Check if user is signed in (non-null) and update UI accordingly.
-//        FirebaseAuth.getInstance().signOut();
-//        currentUser=null;
+
+        Log.d("cruntuser:", currentUser.getUid());
         if(currentUser == null){
             Intent phoneVerf = new Intent(MainActivity.this, PhoneVerificationActivity.class);
             startActivity(phoneVerf);

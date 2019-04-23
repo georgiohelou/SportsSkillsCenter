@@ -3,6 +3,7 @@
     package="com.example.skillssport">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
 
     <application
         android:allowBackup="true"
@@ -11,9 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ContactUsActivity"></activity>
         <activity
             android:name=".ChatActivity"
-            android:label="Skills Sport Center Chat"></activity>
+            android:label="Skills Sport Center Chat" />
         <activity
             android:name=".ProfileActivity"
             android:label="My Profile" />
